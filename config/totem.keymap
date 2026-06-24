@@ -32,12 +32,12 @@
         compatible = "zmk,combos";
 
         combo_equalplus {
-            bindings = <&none>;
+            bindings = <&kp EQUAL>;
             key-positions = <8 9>;
         };
 
         combo_hyphen {
-            bindings = <&none>;
+            bindings = <&kp MINUS>;
             key-positions = <18 19>;
         };
     };
@@ -145,4 +145,3 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
     };
 };
-
