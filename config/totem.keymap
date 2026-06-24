@@ -24,7 +24,7 @@
     quick-tap-ms = <100>;
     global-quick-tap;
     flavor = "hold-preferred";
-    tapping-term-ms = <130>;
+    tapping-term-ms = <140>;
 };
 
 / {
@@ -32,30 +32,15 @@
         compatible = "zmk,combos";
 
         combo_equalplus {
+            timeout-ms = <50>;
             bindings = <&kp EQUAL>;
             key-positions = <8 9>;
         };
 
         combo_hyphen {
+            timeout-ms = <50>;
             bindings = <&kp MINUS>;
             key-positions = <18 19>;
-        };
-    };
-
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
         };
     };
 
